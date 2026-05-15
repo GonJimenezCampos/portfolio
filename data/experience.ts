@@ -13,7 +13,7 @@ export const experience: ExperienceEntry[] = [
     company: "Codearts Solutions",
     role: "Backend Developer",
     period: "Mar 2025 – Actualidad",
-    location: "Sevilla, España",
+    location: "Sevilla, España · Remoto",
     current: true,
     bullets: [
       "Desarrollo backend y referente técnico en proyectos para los sectores de ocio y hostelería.",
@@ -24,14 +24,15 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "Ayesa",
-    role: "Full Stack Developer — Prácticas",
+    role: "Fullstack Developer — Prácticas",
     period: "Mar 2024 – Jun 2024",
-    location: "Sevilla, España",
+    location: "Sevilla, España · Híbrido",
     current: false,
     bullets: [
-      "Prácticas en el equipo de WiBLE (Repsol), plataforma de carsharing.",
-      "Desarrollo full stack de nuevas funcionalidades y mantenimiento de la plataforma.",
+      "Prácticas dentro del equipo asignado al cliente Repsol para el desarrollo del portal de administración interna de WiBLE, servicio de car-sharing en Madrid (joint venture entre Repsol y Kia).",
+      "Desarrollo de nuevas funcionalidades y mejora de las existentes con Python, Django y PostgreSQL, junto con tareas puntuales de frontend en JavaScript.",
+      "Trabajo con Docker para el entorno de desarrollo en un equipo con metodologías Scrum y Kanban.",
     ],
-    stack: ["Python", "Django", "PostgreSQL"],
+    stack: ["Python", "Django", "PostgreSQL", "JavaScript", "Docker"],
   },
 ];

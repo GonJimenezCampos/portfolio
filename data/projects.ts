@@ -16,6 +16,19 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "WiBLE — Portal de Administración",
+    type: "professional",
+    description:
+      "Portal de administración interna del servicio de car-sharing WiBLE (joint venture entre Repsol y Kia, operativo en Madrid). Desarrollado durante las prácticas en Ayesa dentro del equipo asignado al cliente Repsol.",
+    highlights: [
+      "Desarrollo de nuevas funcionalidades y mejora de las existentes en la herramienta de administración con Python y Django.",
+      "Integración con PostgreSQL y tareas puntuales de frontend en JavaScript.",
+      "Entorno Docker con metodologías Scrum y Kanban en un equipo de cliente corporativo real.",
+    ],
+    stack: ["Python", "Django", "PostgreSQL", "JavaScript", "Docker"],
+    links: [],
+  },
+  {
     title: "DPTelemetry App",
     type: "professional",
     description:
