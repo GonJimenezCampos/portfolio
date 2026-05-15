@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { ArrowDown, Mail } from "lucide-react";
+import { ArrowDown, Download, Mail } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/brand-icons";
 import { cn } from "@/lib/utils";
@@ -69,10 +69,12 @@ export async function Hero() {
                 {t("cta_contact")}
               </a>
               <a
-                href="#proyectos"
+                href="/CV_Gonzalo_Jimenez_Campos.pdf"
+                download
                 className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
               >
-                {t("cta_projects")}
+                <Download size={16} />
+                {t("cta_cv")}
               </a>
             </div>
 
