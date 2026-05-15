@@ -5,5 +5,5 @@ export const siteConfig = {
   github: "https://github.com/GonJimenezCampos",
   linkedin: "https://www.linkedin.com/in/gjimenezcampos/",
   // Formspree: crea un formulario en https://formspree.io → copia el ID (ej: "xpwzabcd")
-  formspreeId: "YOUR_FORMSPREE_ID",
+  formspreeId: "xqenvrwj",
 };
