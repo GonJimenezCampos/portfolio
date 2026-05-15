@@ -23,13 +23,14 @@ export interface TechItem {
 }
 
 export interface StackCategory {
-  label: string;
+  /** Translation key used to look up the label in messages/[locale].json */
+  key: string;
   items: TechItem[];
 }
 
 export const stack: StackCategory[] = [
   {
-    label: "Lenguajes",
+    key: "languages",
     items: [
       { name: "PHP", icon: siPhp },
       { name: "Python", icon: siPython },
@@ -38,14 +39,14 @@ export const stack: StackCategory[] = [
     ],
   },
   {
-    label: "Backend",
+    key: "backend",
     items: [
       { name: "Symfony", icon: siSymfony },
       { name: "Django", icon: siDjango },
     ],
   },
   {
-    label: "Frontend & Móvil",
+    key: "frontend_mobile",
     items: [
       { name: "Angular", icon: siAngular },
       { name: "React Native", icon: siReact },
@@ -53,14 +54,14 @@ export const stack: StackCategory[] = [
     ],
   },
   {
-    label: "Bases de datos",
+    key: "databases",
     items: [
       { name: "PostgreSQL", icon: siPostgresql },
       { name: "MySQL", icon: siMysql },
     ],
   },
   {
-    label: "Herramientas",
+    key: "tools",
     items: [
       { name: "Git", icon: siGit },
       { name: "Docker", icon: siDocker },

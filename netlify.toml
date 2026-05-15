@@ -5,6 +5,11 @@
 [build.environment]
   NODE_VERSION = "20"
 
+[[redirects]]
+  from = "/"
+  to = "/es/"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]

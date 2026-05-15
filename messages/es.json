@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "stack": "Stack",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "role": "Backend Developer",
+    "badge": "Disponible para nuevas oportunidades",
+    "tagline": "Construyo APIs robustas y aplicaciones escalables con Symfony y Django. Me importan el código limpio, las buenas prácticas y los sistemas que no fallan en producción.",
+    "cta_contact": "Contactar",
+    "cta_projects": "Ver proyectos",
+    "avatar_badge": "Backend Dev"
+  },
+  "about": {
+    "label": "01. Sobre mí",
+    "title": "Quién soy",
+    "paragraphs": [
+      "Soy Gonzalo Jiménez, Backend Developer en Codearts Solutions. Trabajo principalmente con Symfony, Angular y React Native en proyectos para los sectores de ocio y hostelería, y desde hace un tiempo ejerzo como referente técnico en equipos pequeños, lo que me ha llevado a combinar el desarrollo con la coordinación y el contacto directo con cliente.",
+      "Llegué al desarrollo buscando una disciplina sobre la que crecer profesionalmente y que combinara dos cosas que me atraían: la tecnología y la resolución de problemas lógicos. Elegí un grado superior porque quería una formación práctica y aterrizar pronto en el mundo laboral para aprender mientras trabajaba. No descarto cursar una ingeniería más adelante, pero por ahora estoy aprovechando esta etapa de aprendizaje real.",
+      "Lo que más me engancha de programar es el momento en el que un cliente plantea un problema o una necesidad y toca decidir cuál es la mejor forma de resolverlo con los recursos disponibles. Me entusiasman especialmente los proyectos complejos en los que no solo hay que desarrollar, sino también pensar cómo encajar la solución dentro de las restricciones y los criterios que nos piden.",
+      "Mi enfoque es bastante pragmático: creo en las buenas prácticas y en escribir tests, pero priorizo lo funcional. Prefiero algo imperfecto que resuelve el problema y que puedo pulir después, antes que algo teóricamente impecable que no aporta valor real al cliente.",
+      "Sobre lo que viene: no tengo un plan rígido. Mi objetivo es desarrollar los conocimientos y capacidades que me den libertad para elegir lo que quiera hacer en cada momento. Mientras tanto, seguir aprendiendo y trabajando en proyectos que me obliguen a salir de mi zona de confort."
+    ],
+    "highlights": {
+      "role_label": "Rol actual",
+      "role_value": "Backend Developer",
+      "company_label": "Empresa",
+      "company_value": "Codearts Solutions",
+      "location_label": "Ubicación",
+      "location_value": "Sevilla, España",
+      "experience_label": "Experiencia",
+      "experience_value": "2 años"
+    }
+  },
+  "experience": {
+    "label": "02. Experiencia",
+    "title": "Trayectoria profesional",
+    "entries": [
+      {
+        "role": "Backend Developer",
+        "period": "Mar 2025 – Actualidad",
+        "bullets": [
+          "Desarrollo backend y referente técnico en proyectos para los sectores de ocio y hostelería.",
+          "Coordinación directa con cliente y toma de decisiones técnicas en equipos pequeños.",
+          "Proyectos destacados: Making Of, Museo Cartuja, DPTelemetry."
+        ]
+      },
+      {
+        "role": "Fullstack Developer — Prácticas",
+        "period": "Mar 2024 – Jun 2024",
+        "bullets": [
+          "Prácticas dentro del equipo asignado al cliente Repsol para el desarrollo del portal de administración interna de WiBLE, servicio de car-sharing en Madrid (joint venture entre Repsol y Kia).",
+          "Desarrollo de nuevas funcionalidades y mejora de las existentes con Python, Django y PostgreSQL, junto con tareas puntuales de frontend en JavaScript.",
+          "Trabajo con Docker para el entorno de desarrollo en un equipo con metodologías Scrum y Kanban."
+        ]
+      }
+    ]
+  },
+  "stack": {
+    "label": "03. Stack técnico",
+    "title": "Tecnologías",
+    "categories": {
+      "languages": "Lenguajes",
+      "backend": "Backend",
+      "frontend_mobile": "Frontend & Móvil",
+      "databases": "Bases de datos",
+      "tools": "Herramientas"
+    }
+  },
+  "projects": {
+    "label": "04. Proyectos",
+    "title": "Lo que he construido",
+    "type_professional": "Profesional",
+    "type_personal": "Personal",
+    "entries": [
+      {
+        "title": "WiBLE — Portal de Administración",
+        "description": "Portal de administración interna del servicio de car-sharing WiBLE (joint venture entre Repsol y Kia, operativo en Madrid). Desarrollado durante las prácticas en Ayesa dentro del equipo asignado al cliente Repsol.",
+        "highlights": [
+          "Desarrollo de nuevas funcionalidades y mejora de las existentes en la herramienta de administración con Python y Django.",
+          "Integración con PostgreSQL y tareas puntuales de frontend en JavaScript.",
+          "Entorno Docker con metodologías Scrum y Kanban en un equipo de cliente corporativo real."
+        ]
+      },
+      {
+        "title": "DPTelemetry App",
+        "description": "Aplicación móvil de telemetría en tiempo real para competición de automovilismo. Permite a los pilotos y equipos monitorizar sesiones de carrera, visualizar trayectorias GPS en mapa y seguir el leaderboard en vivo durante los eventos.",
+        "highlights": [
+          "Mapa en vivo con posiciones de hasta 5 dispositivos actualizadas a 20 Hz vía WebSocket.",
+          "Historial de sesiones con telemetría paginada, tiempos por vuelta y filtros avanzados.",
+          "Autenticación completa con JWT, refresh token automático y almacenamiento seguro con expo-secure-store."
+        ]
+      },
+      {
+        "title": "MakkingOf",
+        "description": "Rediseño completo de la plataforma web de MakkingOf, empresa del sector del ocio y la hostelería. Incluye landing pública, sistema de solicitud y gestión de eventos con roles diferenciados (usuario, empresa, administrador) y automatización de notificaciones por email.",
+        "highlights": [
+          "API REST documentada con OpenAPI/Swagger y validada en pipeline de GitLab CI en cada push.",
+          "Soft delete con purga automática a los 90 días mediante Symfony Scheduler y Messenger.",
+          "Despliegue en VPS con Docker Compose, Nginx y certificado SSL automático vía Certbot."
+        ]
+      },
+      {
+        "title": "Museo Cartuja",
+        "description": "Renovación de la plataforma web del Museo Cartuja de Murcia. Aplicación Angular con capacidades PWA para funcionamiento offline, integración de inicio de sesión con Google y pasarela de pagos con Stripe para la venta de entradas.",
+        "highlights": [
+          "PWA con Service Worker y caché de assets: la app funciona sin conexión y se recarga desde caché en visitas posteriores.",
+          "Login social con Google Cloud OAuth 2.0 integrado en el backend Symfony.",
+          "Pasarela de pagos con Stripe para gestión de entradas y reservas."
+        ]
+      }
+    ]
+  },
+  "education": {
+    "label": "05. Formación",
+    "title": "Educación",
+    "type_degree": "Titulación",
+    "type_certification": "Certificación",
+    "entries": [
+      {
+        "title": "Técnico Superior en Desarrollo de Aplicaciones Web",
+        "institution": "Cesur",
+        "period": "2022 – 2024",
+        "description": "Ciclo Formativo de Grado Superior (CFGS). Formación en desarrollo web full stack, bases de datos, despliegue de aplicaciones y metodologías de desarrollo de software."
+      },
+      {
+        "title": "Cambridge C2 Proficiency (CPE)",
+        "institution": "Cambridge Assessment English",
+        "period": "2022",
+        "description": null
+      }
+    ]
+  },
+  "contact": {
+    "label": "06. Contacto",
+    "title": "Hablemos",
+    "description": "Si tienes una oportunidad interesante, una pregunta o simplemente quieres conectar, escríbeme. Respondo en menos de 24 horas.",
+    "name_label": "Nombre",
+    "name_placeholder": "Tu nombre",
+    "email_label": "Email",
+    "email_placeholder": "tu@email.com",
+    "message_label": "Mensaje",
+    "message_placeholder": "Cuéntame en qué puedo ayudarte...",
+    "submit": "Enviar mensaje",
+    "sending": "Enviando…",
+    "success": "Mensaje enviado. Te respondo pronto.",
+    "error": "Algo falló. Inténtalo de nuevo o escríbeme directamente por email."
+  },
+  "footer": {
+    "rights": "Gonzalo Jiménez Campos"
+  }
+}

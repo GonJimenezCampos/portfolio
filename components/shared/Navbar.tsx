@@ -1,20 +1,23 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
-
-const NAV_LINKS = [
-  { label: "Sobre mí", href: "#sobre-mi" },
-  { label: "Experiencia", href: "#experiencia" },
-  { label: "Stack", href: "#stack" },
-  { label: "Proyectos", href: "#proyectos" },
-  { label: "Contacto", href: "#contacto" },
-];
+import { LanguageToggle } from "./LanguageToggle";
 
 export function Navbar() {
+  const t = useTranslations("nav");
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const NAV_LINKS = [
+    { label: t("about"), href: "#sobre-mi" },
+    { label: t("experience"), href: "#experiencia" },
+    { label: t("stack"), href: "#stack" },
+    { label: t("projects"), href: "#proyectos" },
+    { label: t("contact"), href: "#contacto" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -53,6 +56,7 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-2">
+          <LanguageToggle />
           <ThemeToggle />
 
           {/* Mobile menu button */}

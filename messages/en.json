@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "stack": "Stack",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "role": "Backend Developer",
+    "badge": "Open to new opportunities",
+    "tagline": "I build robust APIs and scalable applications with Symfony and Django. I care about clean code, best practices and systems that don't fail in production.",
+    "cta_contact": "Contact me",
+    "cta_projects": "View projects",
+    "avatar_badge": "Backend Dev"
+  },
+  "about": {
+    "label": "01. About",
+    "title": "Who I am",
+    "paragraphs": [
+      "I'm Gonzalo Jiménez, a Backend Developer at Codearts Solutions. I work mainly with Symfony, Angular and React Native on projects for the leisure and hospitality sectors. Over time I've taken on a technical lead role in small teams, which has led me to combine hands-on development with coordination and direct client contact.",
+      "I came to software development looking for a discipline I could grow in professionally — one that combined two things I was drawn to: technology and logical problem-solving. I chose a vocational higher degree because I wanted practical training and to enter the workforce quickly so I could learn on the job. I haven't ruled out a full engineering degree down the line, but for now I'm making the most of this stage of real-world learning.",
+      "What hooks me most about programming is the moment a client presents a problem or a need and you have to figure out the best way to solve it with the resources available. I'm especially drawn to complex projects where you don't just develop — you also have to think about how to fit the solution within the constraints and requirements you've been given.",
+      "My approach is fairly pragmatic: I believe in best practices and writing tests, but I prioritise working software. I'd rather have something imperfect that solves the problem and can be refined later than something theoretically flawless that delivers no real value to the client.",
+      "As for what's next: I don't have a rigid plan. My goal is to build the knowledge and skills that give me the freedom to choose what I want to do at any given moment — while continuing to learn and work on projects that push me out of my comfort zone."
+    ],
+    "highlights": {
+      "role_label": "Current role",
+      "role_value": "Backend Developer",
+      "company_label": "Company",
+      "company_value": "Codearts Solutions",
+      "location_label": "Location",
+      "location_value": "Seville, Spain",
+      "experience_label": "Experience",
+      "experience_value": "2 years"
+    }
+  },
+  "experience": {
+    "label": "02. Experience",
+    "title": "Professional background",
+    "entries": [
+      {
+        "role": "Backend Developer",
+        "period": "Mar 2025 – Present",
+        "bullets": [
+          "Backend development and technical lead on projects for the leisure and hospitality sectors.",
+          "Direct client coordination and technical decision-making within small teams.",
+          "Key projects: Making Of, Museo Cartuja, DPTelemetry."
+        ]
+      },
+      {
+        "role": "Fullstack Developer — Internship",
+        "period": "Mar 2024 – Jun 2024",
+        "bullets": [
+          "Internship within the team assigned to Repsol for the development of the internal admin portal of WiBLE, a car-sharing service in Madrid (a joint venture between Repsol and Kia).",
+          "Development of new features and improvement of existing ones using Python, Django and PostgreSQL, with occasional frontend tasks in JavaScript.",
+          "Docker-based development environment within a team following Scrum and Kanban methodologies."
+        ]
+      }
+    ]
+  },
+  "stack": {
+    "label": "03. Tech stack",
+    "title": "Technologies",
+    "categories": {
+      "languages": "Languages",
+      "backend": "Backend",
+      "frontend_mobile": "Frontend & Mobile",
+      "databases": "Databases",
+      "tools": "Tools"
+    }
+  },
+  "projects": {
+    "label": "04. Projects",
+    "title": "What I've built",
+    "type_professional": "Professional",
+    "type_personal": "Personal",
+    "entries": [
+      {
+        "title": "WiBLE — Admin Portal",
+        "description": "Internal administration portal for WiBLE, a car-sharing service in Madrid (joint venture between Repsol and Kia). Developed during an internship at Ayesa within the team assigned to Repsol.",
+        "highlights": [
+          "Development of new features and improvement of existing ones in the admin tool using Python and Django.",
+          "PostgreSQL integration and occasional frontend tasks in JavaScript.",
+          "Docker environment with Scrum and Kanban methodologies in a real corporate client team."
+        ]
+      },
+      {
+        "title": "DPTelemetry App",
+        "description": "Real-time telemetry mobile app for motorsport competitions. Allows drivers and teams to monitor race sessions, visualise GPS routes on a map and follow the live leaderboard during events.",
+        "highlights": [
+          "Live map with up to 5 device positions updated at 20 Hz via WebSocket.",
+          "Session history with paginated telemetry data, lap times and advanced filters.",
+          "Full auth flow with JWT, automatic token refresh and secure storage via expo-secure-store."
+        ]
+      },
+      {
+        "title": "MakkingOf",
+        "description": "Full redesign of the MakkingOf web platform, a company in the leisure and hospitality sector. Includes a public landing page, an event request and management system with differentiated roles (user, company, admin) and automated email notifications.",
+        "highlights": [
+          "REST API documented with OpenAPI/Swagger and validated in a GitLab CI pipeline on every push.",
+          "Soft delete with automatic purge after 90 days via Symfony Scheduler and Messenger.",
+          "VPS deployment with Docker Compose, Nginx and automatic SSL certificate via Certbot."
+        ]
+      },
+      {
+        "title": "Museo Cartuja",
+        "description": "Redesign of the Museo Cartuja de Murcia web platform. Angular application with PWA capabilities for offline use, Google social login integration and a Stripe payment gateway for ticket sales.",
+        "highlights": [
+          "PWA with Service Worker and asset caching: the app works offline and loads from cache on repeat visits.",
+          "Google Cloud OAuth 2.0 social login integrated in the Symfony backend.",
+          "Stripe payment gateway for ticket and booking management."
+        ]
+      }
+    ]
+  },
+  "education": {
+    "label": "05. Education",
+    "title": "Education",
+    "type_degree": "Degree",
+    "type_certification": "Certification",
+    "entries": [
+      {
+        "title": "Higher National Diploma in Web Application Development",
+        "institution": "Cesur",
+        "period": "2022 – 2024",
+        "description": "Vocational Higher Degree (equivalent to HND). Training in full stack web development, databases, application deployment and software development methodologies."
+      },
+      {
+        "title": "Cambridge C2 Proficiency (CPE)",
+        "institution": "Cambridge Assessment English",
+        "period": "2022",
+        "description": null
+      }
+    ]
+  },
+  "contact": {
+    "label": "06. Contact",
+    "title": "Let's talk",
+    "description": "If you have an interesting opportunity, a question or just want to connect, drop me a message. I reply within 24 hours.",
+    "name_label": "Name",
+    "name_placeholder": "Your name",
+    "email_label": "Email",
+    "email_placeholder": "your@email.com",
+    "message_label": "Message",
+    "message_placeholder": "Tell me how I can help...",
+    "submit": "Send message",
+    "sending": "Sending…",
+    "success": "Message sent. I'll get back to you soon.",
+    "error": "Something went wrong. Try again or reach me directly by email."
+  },
+  "footer": {
+    "rights": "Gonzalo Jiménez Campos"
+  }
+}

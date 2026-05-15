@@ -1,11 +1,38 @@
 "use client";
 
-import { ThemeProvider as NextThemesProvider } from "next-themes";
-import type { ComponentProps } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
-export function ThemeProvider({
-  children,
-  ...props
-}: ComponentProps<typeof NextThemesProvider>) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
+type Theme = "dark" | "light";
+
+const ThemeContext = createContext<{
+  theme: Theme;
+  toggle: () => void;
+}>({ theme: "dark", toggle: () => {} });
+
+export function useTheme() {
+  return useContext(ThemeContext);
+}
+
+export function ThemeProvider({ children }: { children: React.ReactNode }) {
+  const [theme, setTheme] = useState<Theme>("dark");
+
+  useEffect(() => {
+    const stored = localStorage.getItem("theme") as Theme | null;
+    const resolved: Theme = stored === "light" ? "light" : "dark";
+    setTheme(resolved);
+    document.documentElement.classList.toggle("dark", resolved === "dark");
+  }, []);
+
+  const toggle = () => {
+    const next: Theme = theme === "dark" ? "light" : "dark";
+    setTheme(next);
+    localStorage.setItem("theme", next);
+    document.documentElement.classList.toggle("dark", next === "dark");
+  };
+
+  return (
+    <ThemeContext.Provider value={{ theme, toggle }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 }
