@@ -5,23 +5,23 @@ import { GithubIcon, LinkedinIcon } from "@/components/ui/brand-icons";
 import { cn } from "@/lib/utils";
 import { siteConfig } from "@/lib/config";
 
-function AvatarPlaceholder({ badge }: { badge: string }) {
+function Avatar({ badge }: { badge: string }) {
   return (
     <div className="relative flex-shrink-0 mx-auto lg:mx-0">
+      {/* Glow ring */}
       <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-primary/40 via-primary/10 to-transparent blur-md" />
-      <div className="relative w-52 h-52 sm:w-64 sm:h-64 rounded-full border border-primary/30 bg-muted flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)",
-            backgroundSize: "24px 24px",
-          }}
+
+      {/* Photo */}
+      <div className="relative w-52 h-52 sm:w-64 sm:h-64 rounded-full border border-primary/30 overflow-hidden">
+        <img
+          src="/avatar.jpg"
+          alt="Gonzalo Jiménez Campos"
+          className="w-full h-full object-cover"
+          style={{ objectPosition: "60% 35%" }}
         />
-        <span className="relative text-4xl sm:text-5xl font-bold tracking-tight text-primary select-none">
-          GJC
-        </span>
       </div>
+
+      {/* Badge */}
       <div className="absolute -bottom-2 -right-2 px-2.5 py-1 rounded-full bg-background border border-border text-xs font-medium text-muted-foreground shadow-sm">
         {badge}
       </div>
@@ -107,7 +107,7 @@ export async function Hero() {
             </div>
           </div>
 
-          <AvatarPlaceholder badge={t("avatar_badge")} />
+          <Avatar badge={t("avatar_badge")} />
         </div>
       </div>
 
