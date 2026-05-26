@@ -32,8 +32,8 @@ export async function Projects() {
                 ? t("type_professional")
                 : t("type_personal");
             return (
-              <FadeIn key={entry.title} delay={i * 100}>
-                <article className="flex flex-col rounded-xl border border-border bg-card p-6 hover:border-primary/30 hover:bg-primary/[0.02] transition-colors">
+              <FadeIn key={entry.title} delay={i * 100} className="h-full">
+                <article className="h-full flex flex-col rounded-xl border border-border bg-card p-6 hover:border-primary/30 hover:bg-primary/[0.02] transition-colors">
                   <div className="flex items-start justify-between gap-4 mb-4">
                     <div className="space-y-1">
                       <span className="inline-block px-2 py-0.5 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20 mb-2">

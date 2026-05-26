@@ -32,4 +32,11 @@ export const projects: Project[] = [
     stack: ["Symfony", "Angular", "PostgreSQL", "Docker", "Stripe", "PWA"],
     links: [],
   },
+  {
+    type: "personal",
+    stack: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "PWA", "Zod"],
+    links: [
+      { label: "Web", href: "https://cuando-sand.vercel.app/" },
+    ],
+  },
 ];

@@ -113,6 +113,15 @@
           "Google Cloud OAuth 2.0 social login integrated in the Symfony backend.",
           "Stripe payment gateway for ticket and booking management."
         ]
+      },
+      {
+        "title": "Cuándo",
+        "description": "Installable PWA for scheduling group meetups without WhatsApp chaos. Each participant marks their availability on a time grid and the app calculates the best overlap times.",
+        "highlights": [
+          "Availability grid with real-time updates via Supabase Realtime.",
+          "Slot ranking with weighted scoring (available = 1.0, maybe = 0.5) across all invitees.",
+          "Full auth (email + Google OAuth), Web Push notifications and invite-link groups."
+        ]
       }
     ]
   },

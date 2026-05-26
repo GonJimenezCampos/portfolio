@@ -113,6 +113,15 @@
           "Login social con Google Cloud OAuth 2.0 integrado en el backend Symfony.",
           "Pasarela de pagos con Stripe para gestión de entradas y reservas."
         ]
+      },
+      {
+        "title": "Cuándo",
+        "description": "PWA instalable para organizar quedadas en grupo sin el caos del WhatsApp. Cada participante marca su disponibilidad en un grid horario y la app calcula qué momento encaja con más gente.",
+        "highlights": [
+          "Grid de disponibilidad con actualizaciones en tiempo real vía Supabase Realtime.",
+          "Ranking de slots con scoring ponderado (disponible = 1.0, quizás = 0.5) sobre el total de invitados.",
+          "Auth completa (email + Google OAuth), notificaciones Web Push y grupos por link de invitación."
+        ]
       }
     ]
   },
